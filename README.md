@@ -20,8 +20,7 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/您的用户名/项目名.git
-cd 项目名
+git clone https://github.com/ACGpp/WEB-CHAT.git
 ```
 
 ### 2. 安装依赖
