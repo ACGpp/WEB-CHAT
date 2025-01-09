@@ -1,5 +1,6 @@
 import { AIModelRequest, AIModelResponse } from './types';
 import { ModelType, MODEL_CONFIGS } from '../types/chat';
+import axios from 'axios';
 
 class ModelService {
   static checkModelAvailability(modelType: ModelType): AIModelResponse {
@@ -18,7 +19,16 @@ class ModelService {
   }
 
   static async sendMessage(modelType: ModelType, request: AIModelRequest): Promise<AIModelResponse> {
-    return this.checkModelAvailability(modelType);
+    try {
+      const MODEL_API_URL = 'https://your-model-api.com'; // Define the API URL
+      const response = await axios.post<{ status: string; message: string; data: any }>(`${MODEL_API_URL}/${modelType}`, request);
+      return {
+        content: response.data.message,
+        modelType,
+      };
+    } catch (error) {
+      throw new Error('发送消息失败');
+    }
   }
 }
 

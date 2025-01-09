@@ -19,12 +19,11 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/您的用户名/项目名.git
-cd 项目名
+git clone https://github.com/ACGpp/WEB-CHAT/tree/main
 ```
 
 ### 2. 安装依赖
-
+需要安装 Node.js 和 npm,请自行前往官网下载
 ```bash
 npm install
 ```
