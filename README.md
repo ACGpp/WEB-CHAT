@@ -1,7 +1,8 @@
 # AI Chat Web Application
 
 ## 项目介绍
-这是一个基于React和TypeScript开发的AI对话应用。用户可以选择不同的AI模型，与之进行实时对话。
+这是一个基于React和TypeScript开发的AI对话应用。用户可以选择不同的AI模型，与之进行实时对话。做这个项目的初衷是为了在同一个界面丝滑转换其它的模型进行交流。
+![image](https://github.com/user-attachments/assets/67e3c6ad-d00c-4786-bf2b-1d9e5635d0ad)
 
 ## 功能说明
 
